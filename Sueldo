@@ -1,0 +1,28 @@
+//titulo: Sueldo
+//Nombre: Estefany meneses soto
+//fecha :3/9/2015
+//Sueldo Neto
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+//librerias
+using namespace std; //uso del teclado y monitor
+void main()//programa principal 
+{
+   int a, b, c, h;//declaracion de varoables
+   float sueldo;//declaracion de varoables
+   float i;//declaracion de varoables
+   cout << "Ingrese el numero de empleados: " << endl; //Mensaje para el usuario que se muestra en la pantalla
+   cin >> a;//ingreso de dato por el usuario
+   for (h=1;h<=a;h++) //Ciclo repetitivo
+   {
+     cout << "Ingrese las horas trabajadas: " << endl;//Mensaje para el usuario que se muestra en la pantalla
+     cin >> b;//ingreso de dato por el usuario
+     cout << "Ingrese el pago por hora: " << endl;//Mensaje para el usuario que se muestra en la pantalla
+     cin >> c;//ingreso de dato por el usuario
+     i = 0.13;//dato
+     sueldo = (c*b)-((c*b)*i);//operacion
+     cout << "El sueldo es: " << sueldo << endl;//Mensaje para el usuario que se muestra en la pantalla
+   }
+   getch();//pausa el programa
+}
