@@ -1,0 +1,23 @@
+//titulo: Are del triangulo
+//nombre:Estefany meneses soto
+//fecha:3/9/2015
+
+#include "stdafx.h"//libreria 
+#include "conio.h"//libreria 
+#include <iostream>//libreria 
+
+using namespace std; //uso del teclado y monitor 
+void main () //programa prioncipal
+
+{ float a,B,H; //Declaracion de las variables
+    cout<< "Calcule el area de un triangulo"; //Mensaje para el usuario que se muestra en la pantalla
+	cout<< "ingrese la base"; //Mensaje para el ususario que se muestra a la pantalla
+	cin>> B; //Ingreso de datos por el usuario
+	cout<< "ingrese la altura";//Mensaje para el ususario que se muestra a la pantalla
+	cin>> H;//Ingreso de datos por el usuario
+	a=(B*H)/2;//Calculo de la formula
+	cout<< "el area de su triangulo es:"; //Mensaje para el ususario que se muestra a la pantalla
+	cout<< a; //Mensaje para el ususario que se muestra a la pantalla
+	getch(); //pausar la presentacion del programa
+	
+}
