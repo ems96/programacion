@@ -17,7 +17,7 @@ void main ()
 	cin>> B;
 	cout<< "ingrese la altura";
 	cin>> H;
-	a<-(B*H);
+	a=(B*H);
 	cout<< "el area de su rectangulo es:";
 	cout<< a;
 	getch();
