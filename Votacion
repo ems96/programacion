@@ -1,0 +1,22 @@
+// votar.h
+// Autor: estefany meneses soto
+//Fecha: 10/9/15
+
+#include "stdafx.h" 
+#include "conio.h" 
+#include <iostream>
+
+using namespace std;
+
+
+void main()
+{ int edad; 
+  cout<<"ingrese su edad"<<endl;
+  cin>>edad;
+  if(edad>=18)
+	  cout<<"puede votar"<<endl;
+  else
+	  cout<<"no puede votar"<<endl;
+
+  getch();
+}
