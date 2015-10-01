@@ -1,5 +1,7 @@
+//Autor: Estefany meneses soto
+//1/8/15
 // impuesto.cpp : Defines the entry point for the console application.
-//
+
 
 #include "stdafx.h"
 #include "conio.h"
