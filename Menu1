@@ -1,0 +1,52 @@
+// menu.cpp : Defines the entry point for the console application.
+//autor: estefany meneses soto
+ 
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+#include "stdlib.h"
+using namespace std;
+
+float Potencia(float base, float exponente);
+float Suma(int N);
+float Areacirculo(float radio);
+ void main()
+
+ { float b,e,p;
+   int opcion;
+          //menu
+ do{
+	 cout<<"------Menu------"<<endl;
+	 cout<<"--------------------------------------------------------"<<endl;
+	 cout<<"1.POTENCIA"<<endl;
+	 cout<<"2.SUMA"<<endl;
+	 cout<<"3.AREA DEL CIRCULO"<<endl;
+	 cout<<"SALIR"<<endl;
+	 cout<<"Opcion:";
+	 cin>>opcion;
+           switch(opcion)
+
+		   { case 1: cout<<"ingrese la base"<<endl;
+		             cin>>b;
+					 cout<<"ingrese el exponente"<<endl;
+					 cin>>e;
+					 p=Potencia(b,e);
+					 cout<<"su potencia es"<<p<<endl;
+					 break;
+
+
+		   }
+ getch();
+		system("cls");
+	}while (opcion!=0);
+	getch();
+
+  }
+
+ 
+float Potencia(float base, float exponente)
+{
+	pow(base,exponente);
+}
