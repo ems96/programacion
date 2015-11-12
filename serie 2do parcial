@@ -1,0 +1,25 @@
+// examem.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+ using namespace std;
+
+void main()
+{ int n,i,s,sig;
+cout<<"ingrese la cantidad de numero:";
+cin>>n;
+s=0;
+sig=-1;
+for(int i=2;i<=n;i=i+2)
+{
+
+s=s+sig*10;
+sig=-sig;
+
+}
+
+cout<<"la suma es;"<<s<<endl;
+getch();
+}
