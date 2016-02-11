@@ -1,0 +1,24 @@
+#include <iostream>
+#include "conio.h"
+ using namespace std;
+ void main()
+ { int A,B;
+	 cout<<"ingrese numero";
+     cin>>A;
+	 cout<<"ingrese otro numero";
+	 cin>>B;
+
+	 if(A>B){
+		 cout<<"el numero mayor ---->>: "<< A;
+	 }else{
+	    
+		 if(B>A){
+         cout<<"el numero mayor ---->>: "<< B;
+		 }else{
+
+		 cout<<"ambos son iguales";
+		 }
+	 }
+		 getch();
+
+ }
