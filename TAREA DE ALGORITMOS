@@ -1,0 +1,122 @@
+//QUE MUESTRE LOS NUMERO IMPARES DE UN NUMERO AL INTRODUCIR
+
+#include "conio.h"
+#include <iostream>
+
+   using namespace std;
+
+
+int invertir(int n)
+{
+	int d,newa=0;
+	while(n>0){
+	d=n%10;
+	newa=newa*10+d;
+	n=n/10;
+	}
+	return(newa);
+
+}
+
+
+int contarDigitos(int n )
+{int c=0;
+while (n>0)
+      { n=n/10;
+        c++;
+      }
+  return(c);
+}
+
+int sumardigitos(int n)
+
+{ 
+	int X1,s=0;
+	while(n>0){
+	     
+		X1=n%10;
+		s=s+X1;
+		n=n/10;
+	}
+	return(s);
+
+}
+
+int sumarDigitosImpares(int n){
+	int a,s=0;
+	while(n>0){
+	
+	a=n%10;
+	if(a%2!=0){s=s+a;}
+	
+	
+	
+	n=n/10;
+}
+return(s);
+  
+}
+
+
+
+
+
+
+void main(){ int a,r,opcion;
+do{cout<<"introducir un numero natural  ";
+cin>> a;
+
+}while(a<1);
+
+do{
+   cout<<endl<<endl<<"Menu";
+   cout<<endl<<"1.contar cantidad de digitos";
+   cout<<endl<<"2.sumar todos los digitos";
+   cout<<endl<<"3.sumar digitos impares";
+   cout<<endl<<"4.invertir numero";
+   cout<<endl<<"0.salir";
+   cout<<endl<<"seleccione una opcion";
+   cin>> opcion;
+   switch(opcion){
+                   case 1:  r=contarDigitos(a);
+				            cout<<"la cantidad de digitos es"<<r;
+							break;
+
+				   case 2:  r= sumardigitos(a);
+					        cout<<"la suma de todos los digitos es"<<r;
+							break;
+				   case 3: r=sumarDigitosImpares(a);
+					       cout<<"la suma de todos los digitos impares es"<<r;
+                           break;
+                   case 4: r=invertir(a);
+					       cout<<"los numeros invertidos son  "<<r;
+                           break;
+
+
+                  case 0: cout << "Saliendo del menu " << endl;
+				break;
+		
+		default: cout << "ERROR de opcion" << endl;
+				 break;
+		}
+
+		_getch();
+		system("cls");
+	}
+   
+   
+
+  while (opcion != 0);
+	getch();
+
+
+
+
+}
+
+
+
+
+
+
+
