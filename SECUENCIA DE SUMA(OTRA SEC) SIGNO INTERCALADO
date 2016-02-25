@@ -1,0 +1,29 @@
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+  
+  void secuenciasuma(int n){
+	  int i,s=1,j=0;
+	  for(i=1;i<=n;i++){
+		if(j==0){
+		  cout<<j<<",";
+		 s=s+i;
+		 j=1;
+		}else{
+		cout<<s<<", ";
+		s=s-i;
+		j=0;
+		}
+     }
+  }
+	  
+	  
+	 
+   void main(){
+   int n;
+   cout<<"Cuantos numeros a mostrar?";
+   cin>>n;
+   secuenciasuma(n); 
+   getch();
+   }
