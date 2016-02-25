@@ -1,0 +1,33 @@
+#include "conio.h"
+#include <iostream>
+
+   using namespace std;
+ 
+  void mostrarsecimpares(int n){
+
+
+	   int i,imp=1;
+	   for(i=1;i<=n;i++)
+	   { cout<<imp<<",  ";
+	   imp=imp+2;
+	   }
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   void main(){
+   int n;
+   cout<<"Cuantos numeros a mostrar?";
+   cin>>n;
+   mostrarsecimpares( n); 
+   getch();
+   }
